@@ -1,81 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>QAViros – Automate Now</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>QAVIROS – Automate Now</title>
   <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
     body {
-      margin: 0;
       font-family: Arial, sans-serif;
-      background: #000;
+      background: linear-gradient(135deg, #000000, #0a0a0a, #111);
       color: #fff;
+      line-height: 1.6;
     }
 
+    /* HERO */
     header {
-      background: #0f0f0f;
-      padding: 20px;
-      text-align: center;
-    }
-
-    header h1 {
-      margin: 0;
-      color: #00ff66;
-      font-size: 2.5rem;
-    }
-
-    header p {
-      margin: 5px 0 0;
-      color: #aaa;
-    }
-
-    .hero {
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      height: 80vh;
       text-align: center;
+      height: 100vh;
       padding: 20px;
     }
-
-    .hero h2 {
-      font-size: 3rem;
-      margin-bottom: 10px;
+    header h1 {
+      font-size: 4rem;
       color: #00ff66;
     }
-
-    .hero p {
-      font-size: 1.2rem;
+    header p {
+      font-size: 1.3rem;
+      margin: 15px 0;
       color: #ccc;
-      max-width: 600px;
     }
-
-    .hero button {
+    header button {
       margin-top: 20px;
-      padding: 15px 30px;
+      padding: 15px 40px;
       font-size: 1rem;
       font-weight: bold;
       background: #00ff66;
       border: none;
-      border-radius: 5px;
+      border-radius: 6px;
       cursor: pointer;
       color: #000;
       transition: 0.3s;
     }
-
-    .hero button:hover {
+    header button:hover {
       background: #00cc55;
     }
 
-    footer {
+    /* FEATURES */
+    .features {
+      display: flex;
+      justify-content: space-around;
+      gap: 20px;
+      padding: 60px 20px;
       background: #0f0f0f;
+    }
+    .feature {
+      flex: 1;
+      max-width: 300px;
+      background: #1a1a1a;
+      padding: 30px;
+      border-radius: 10px;
       text-align: center;
-      padding: 15px;
-      font-size: 0.9rem;
-      color: #777;
+    }
+    .feature h3 {
+      margin-bottom: 15px;
+      color: #00ff66;
+    }
+    .feature p {
+      color: #aaa;
     }
 
+    /* FOOTER */
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #0a0a0a;
+      color: #666;
+      font-size: 0.9rem;
+    }
     footer a {
       color: #00ff66;
       text-decoration: none;
@@ -83,19 +91,32 @@
   </style>
 </head>
 <body>
+  <!-- HERO -->
   <header>
-    <h1>QAViros</h1>
-    <p>Automate Now</p>
+    <h1>QAVIROS</h1>
+    <p>Automate Now – Simplify your workflow, boost your future</p>
+    <button>Get Started</button>
   </header>
 
-  <section class="hero">
-    <h2>Boost Your Productivity</h2>
-    <p>Le futur du travail automatisé commence ici. Simplifie tes tâches, gagne du temps et concentre-toi sur ce qui compte vraiment.</p>
-    <button>Get Started</button>
+  <!-- FEATURES -->
+  <section class="features">
+    <div class="feature">
+      <h3>⚡ Speed</h3>
+      <p>Automate tasks instantly and save hours every week.</p>
+    </div>
+    <div class="feature">
+      <h3>🔒 Security</h3>
+      <p>All your data stays safe with enterprise-grade protection.</p>
+    </div>
+    <div class="feature">
+      <h3>🌍 Scalability</h3>
+      <p>From small projects to global scale, QAVIROS grows with you.</p>
+    </div>
   </section>
 
+  <!-- FOOTER -->
   <footer>
-    <p>© 2025 QAViros – Built with ❤️ | <a href="#">Contact</a></p>
+    <p>© 2025 QAVIROS – Built with ❤️ | <a href="#">Contact</a></p>
   </footer>
 </body>
 </html>
