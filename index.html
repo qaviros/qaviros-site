@@ -3,46 +3,99 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>QAVIROS</title>
+  <title>QAViros – Automate Now</title>
   <style>
     body {
       margin: 0;
-      height: 100vh;
+      font-family: Arial, sans-serif;
+      background: #000;
+      color: #fff;
+    }
+
+    header {
+      background: #0f0f0f;
+      padding: 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      color: #00ff66;
+      font-size: 2.5rem;
+    }
+
+    header p {
+      margin: 5px 0 0;
+      color: #aaa;
+    }
+
+    .hero {
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      background: #000;
-      color: #00ff66;
-      font-family: Arial, sans-serif;
+      height: 80vh;
       text-align: center;
+      padding: 20px;
     }
-    h1 {
+
+    .hero h2 {
       font-size: 3rem;
-      margin: 0;
+      margin-bottom: 10px;
+      color: #00ff66;
     }
-    p {
-      font-size: 1.5rem;
-      margin: 10px 0 20px;
+
+    .hero p {
+      font-size: 1.2rem;
+      color: #ccc;
+      max-width: 600px;
     }
-    button {
+
+    .hero button {
+      margin-top: 20px;
+      padding: 15px 30px;
+      font-size: 1rem;
+      font-weight: bold;
       background: #00ff66;
       border: none;
-      padding: 12px 24px;
-      font-size: 1rem;
       border-radius: 5px;
       cursor: pointer;
       color: #000;
-      font-weight: bold;
+      transition: 0.3s;
     }
-    button:hover {
+
+    .hero button:hover {
       background: #00cc55;
+    }
+
+    footer {
+      background: #0f0f0f;
+      text-align: center;
+      padding: 15px;
+      font-size: 0.9rem;
+      color: #777;
+    }
+
+    footer a {
+      color: #00ff66;
+      text-decoration: none;
     }
   </style>
 </head>
 <body>
-  <h1>QAVIROS</h1>
-  <p>Automate Now</p>
-  <button>Get Started</button>
+  <header>
+    <h1>QAViros</h1>
+    <p>Automate Now</p>
+  </header>
+
+  <section class="hero">
+    <h2>Boost Your Productivity</h2>
+    <p>Le futur du travail automatisé commence ici. Simplifie tes tâches, gagne du temps et concentre-toi sur ce qui compte vraiment.</p>
+    <button>Get Started</button>
+  </section>
+
+  <footer>
+    <p>© 2025 QAViros – Built with ❤️ | <a href="#">Contact</a></p>
+  </footer>
 </body>
 </html>
